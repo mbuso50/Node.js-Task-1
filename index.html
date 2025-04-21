@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeMedia Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">FreeMedia</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#songs">Songs</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover Copyright-Free Media</h1>
+            <p>High-quality movies, series, and songs you can use freely</p>
+        </section>
+
+        <section id="movies" class="products">
+            <h2>Movies</h2>
+            <div class="product-grid" id="movies-grid"></div>
+        </section>
+
+        <section id="series" class="products">
+            <h2>Series</h2>
+            <div class="product-grid" id="series-grid"></div>
+        </section>
+
+        <section id="songs" class="products">
+            <h2>Songs</h2>
+            <div class="product-grid" id="songs-grid"></div>
+        </section>
+    </main>
+
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span>Total: R</span>
+                <span class="total-amount">0</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 FreeMedia Store. All media is copyright-free.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
